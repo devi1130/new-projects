@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Textbox with button</title>
+        <link rel="stylesheet">
+        <link rel="icon" type="image/png" href="icon_image.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+        <style>
+            body{
+                margin:0px;
+                padding:20px;
+                background-color:darkmagenta;
+                border: 2px;
+                font-family:Arial, Helvetica, sans-serif;
+                color:beige;
+                
+            }
+            .bottom-border-input {
+                width:300px;
+                padding: 8px 0px;
+                border:none;
+                border-bottom:2px solid #cccc;
+                font-size: 14px;
+                outline:none;
+                background:transparent;
+            }
+            .bottom-border-input:focus {
+                border-bottom: 2px solid #e77600;
+            }
+
+            a{
+                text-decoration: none;
+                color:rgb(255, 0, 72);
+            }
+
+            a:hover{
+                text-decoration:underline;
+            }
+            .container {
+                display: flex;
+                gap:10px;
+                justify-content:center;
+                margin-top: 20px;}
+            .box{
+                padding:15px 30px;
+                font-size: 20px;
+                border-radius: 10px;
+                background-color: burlywood;
+                box-shadow:0 4px 6px rgba(0,0,0,0.2);
+                flex:1;
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <label for="email">Enter your mobile number or email</label><br>
+        <input type="text" id="email" class="bottom-border-input" placeholder="">
+        <p>By continuning,you agree to amazon's 
+            <a href="#">conditions</a> and 
+            <a href="#">privacy notice</a>
+        </p>
+        <div class="container">
+            <div class="box">Left Side</div>
+            <div class="box">Center</div>
+            <div class="box">Right Side</div>
+        </div>
+        
+        <p><i class="fa-solid fa-envelope"></i>Email Address</p>
+    </body>
+</html>
