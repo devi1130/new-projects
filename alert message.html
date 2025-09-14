@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url('alert img.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: crimson;
+}
+
+p {
+  text-align: center;
+  color: burlywood;
+}
+
+.alert-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.alert {
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  min-width: 300px;
+}
+
+.alert-danger {
+  background-color: red;
+  color: beige;
+}
+
+.alert-info {
+  background-color: deepskyblue;
+  color: beige;
+}
+
+.alert-success {
+  background-color: green;
+  color: beige;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: rgb(18, 17, 17);
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<h2>Alert Messages</h2>
+<p>Click on the "x" symbol to close each alert.</p>
+
+<div class="alert-container">
+  <div class="alert alert-danger">
+    <div><strong>Danger!</strong> Indicates a dangerous or potentially negative action.</div>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  </div>
+
+  <div class="alert alert-info">
+    <div><strong>Info!</strong> Indicates useful or important information.</div>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  </div>
+
+  <div class="alert alert-success">
+    <div><strong>Success!</strong> Indicates a positive or successful action.</div>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  </div>
+</div>
+
+</body>
+</html>
