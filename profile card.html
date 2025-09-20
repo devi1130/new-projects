@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <body>
+        <title>profile card</title>
+        <div class="container">
+        <img src="design3.jpg" alt="profile photo">
+        <h2>Devi</h2>
+        <p>Henna Artist</p>
+           
+        <div class="details">
+            <div><h3>3.5k</h3><span>followers</span></div>
+            <div><h3>225</h3><span>following</span></div>
+        </div>
+        <div class="button">
+            <button class="btn-follow">follow</button>
+            <button class="btn-message">message</button>
+    </div>
+</div>
+</body>
+<style>
+    body{
+        background:linear-gradient(90deg,rgba(42,123,155,1)0%,rgba(45,194,107,0.64)43%,rgba(237,221,83,1)100%);
+        color:antiquewhite;
+        font-size:medium;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin:0px;
+        padding:0px;
+    }
+    .container{
+        background-color: rgba(0, 0, 0, 0.677);
+        border-radius: 10px;
+        text-align: center;
+        width:300px;
+        box-shadow:rgba(0, 0, 0, 0.536) 0 8px 20px;
+        padding:10px;
+        height: fit-content;
+        margin-top: 10%;
+        }
+    img{
+        width:100px;
+        height:100px;
+        border-radius: 50%;
+        border-style: 2px solid;
+        border-color: burlywood;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .details{
+            display: flex;
+            justify-content: space-around;
+            margin: 15px 0;
+    }
+    .details div{
+        text-align: center;
+    }
+    .details div h3{
+        margin:0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .div span{
+        font-size: 13px;
+        color:beige;
+    }
+    .buttons{
+        display:flex;
+        justify-content: center;
+        gap:15px;
+        margin-top: 15px;
+    }
+    .button{
+        .btn-follow{
+            color:aliceblue;
+            background-color: royalblue;
+            border-radius: 10px;
+        }
+        .btn-message{
+            color:royalblue;
+            background-color: transparent;
+        }
+    }
+</style>
